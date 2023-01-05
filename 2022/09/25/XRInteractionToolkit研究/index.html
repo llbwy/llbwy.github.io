@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>XR Interaction Toolkit研究 - 编号89757 =&gt; (凯)</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="编号89757 =&gt; (凯)"><meta name="msapplication-TileImage" content="https://pic.stackoverflow.wiki/uploadImages/123/133/198/26/2022/08/06/14/24/3950b1ed-eaab-4a74-a513-9313ea99ba58.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="编号89757 =&gt; (凯)"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="🎮"><meta property="og:type" content="blog"><meta property="og:title" content="XR Interaction Toolkit研究"><meta property="og:url" content="https://www.llbwy.com/2022/09/25/XRInteractionToolkit%E7%A0%94%E7%A9%B6/"><meta property="og:site_name" content="编号89757 =&gt; (凯)"><meta property="og:description" content="🎮"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://pic.stackoverflow.wiki/uploadImages/58/59/21/62/2022/09/07/09/18/ddd65db6-3c8d-417f-90ae-f11219c35d11.jpg"><meta property="article:published_time" content="2022-09-25T09:45:21.000Z"><meta property="article:modified_time" content="2022-12-19T02:45:10.012Z"><meta property="article:author" content="凯"><meta property="article:tag" content="🔥Unity🔥"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://pic.stackoverflow.wiki/uploadImages/58/59/21/62/2022/09/07/09/18/ddd65db6-3c8d-417f-90ae-f11219c35d11.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.llbwy.com/2022/09/25/XRInteractionToolkit%E7%A0%94%E7%A9%B6/"},"headline":"XR Interaction Toolkit研究","image":["https://pic.stackoverflow.wiki/uploadImages/58/59/21/62/2022/09/07/09/18/ddd65db6-3c8d-417f-90ae-f11219c35d11.jpg"],"datePublished":"2022-09-25T09:45:21.000Z","dateModified":"2022-12-19T02:45:10.012Z","author":{"@type":"Person","name":"凯"},"publisher":{"@type":"Organization","name":"编号89757 => (凯)","logo":{"@type":"ImageObject","url":"https://pic.stackoverflow.wiki/uploadImages/123/133/198/26/2022/08/06/14/24/3950b1ed-eaab-4a74-a513-9313ea99ba58.svg"}},"description":"🎮"}</script><link rel="canonical" href="https://www.llbwy.com/2022/09/25/XRInteractionToolkit%E7%A0%94%E7%A9%B6/"><link rel="icon" href="https://pic.stackoverflow.wiki/uploadImages/123/133/198/26/2022/08/06/14/24/3950b1ed-eaab-4a74-a513-9313ea99ba58.svg"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&amp;family=Roboto+Mono"><link rel="stylesheet" href="/css/cyberpunk.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://pic.stackoverflow.wiki/uploadImages/123/133/198/26/2022/08/06/14/24/3950b1ed-eaab-4a74-a513-9313ea99ba58.svg" alt="编号89757 =&gt; (凯)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/games">游戏</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://pic.stackoverflow.wiki/uploadImages/58/59/21/62/2022/09/07/09/18/ddd65db6-3c8d-417f-90ae-f11219c35d11.jpg" alt="XR Interaction Toolkit研究"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-09-25T09:45:21.000Z" title="2022/9/25 17:45:21">2022-09-25</time>发表</span><span class="level-item"><time dateTime="2022-12-19T02:45:10.012Z" title="2022/12/19 10:45:10">2022-12-19</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></span><span class="level-item">13 分钟读完 (大约2017个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">XR Interaction Toolkit研究</h1><div class="content"><p>🎮</p>
+<span id="more"></span>
+
+<p><em>主要是一些inspector里对应的功能，全是英文难以记忆</em></p>
+<h2 id="XR-Interaction-Toolkit研究"><a href="#XR-Interaction-Toolkit研究" class="headerlink" title="XR Interaction Toolkit研究"></a>XR Interaction Toolkit研究</h2><p>官方链接：<br><a target="_blank" rel="noopener" href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/api">https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/api</a></p>
+<hr>
+<p><strong>XRRig : 其实就是XR Origin，官网还没改过来，通常连接到XR Rig的基础对象上，并将其存储起来，然后通过移动进行操作。它也被用来偏移相机。</strong></p>
+<img src="https://img-blog.csdnimg.cn/78dbb031284a4ade936eb19187e5a0f5.png">
+
+<p>OriginBaseGameObject：根节点，射线移动和转移就是修改这个对象的位置</p>
+<p>CameraFloorOffsetObject：设置相机距离地板的高度</p>
+<p>TrackingOriginMode：原点空间跟踪模式（PICO不能选择NotSpecified）</p>
+<hr>
+<p><strong>TrackedPoseDriver:</strong></p>
+<img src="https://img-blog.csdnimg.cn/a124bbb6679347d1bfa2562d6d306a6c.png">
+
+<p><a target="_blank" rel="noopener" href="https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/api/UnityEngine.SpatialTracking.TrackedPoseDriver.html">https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/api/UnityEngine.SpatialTracking.TrackedPoseDriver.html</a></p>
+<p>Device：跟踪设备类型</p>
+<p>PoseSource：追踪资源，大部分选择Center</p>
+<p>TrackingType：姿态跟踪类型，分位置和朝向</p>
+<p>UpdateType：刷新类型，选择UpdateAndBeforeRender，能提供最顺滑的姿态追踪和最低时延的设备延迟</p>
+<hr>
+<p><strong>XRController:从XR输入子系统将跟踪的输入控制器设备上的特征值解释为XR交互状态，例如Select。此外，它将被跟踪设备的当前姿态值应用于（UnityXR支持多个XRController，比如左手可以同时有一个Ray交互控制器和一个Direct交互控制器，这样可以实现复杂的交互，但要小心各个交互者之间的层级设定）</strong></p>
+<img src="https://img-blog.csdnimg.cn/72290fe8f00f49b8b4bcfd601ceb5809.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_10,color_FFFFFF,t_70,g_se,x_16">
+
+<p>UpdateTrackingType：刷新类型</p>
+<p>controllerNode：控制器选择（左右手）</p>
+<p>EnableInputActions：是否监听输入动作</p>
+<p>selectUsage：选择按钮，抓取动作按钮</p>
+<p>activateUsage ：激活按钮（选择状态中激活）</p>
+<p>uipressUsage：ui按下按钮</p>
+<p>AxisToPressThreshold：设置上述三个交互按钮的按下最小限制</p>
+<p>RotateObjectLeft&#x2F;Right&#x2F;In&#x2F;Out：设置四个方向的按键定义（用来定义移动和旋转射线抓取物品）</p>
+<p>ModelPrefab：手模预制物，可以自动生成</p>
+<p>ModelParent：手模父节点</p>
+<p>Model：手模Tnf</p>
+<p>AnimateModel：动画模块</p>
+<p>调用手柄震动函数：SendHapticImpulse(float amplitude, float duration)</p>
+<hr>
+<p><strong>XR Socket Interactor：用于通过插座定位可交互内容的交互者</strong></p>
+<img src="https://img-blog.csdnimg.cn/960df5bfa8e84874806a36cb8c606c27.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_9,color_FFFFFF,t_70,g_se,x_16">
+
+<p>InteractionLayerMask：交互层级遮罩，指定可交互的层级</p>
+<p>AttachTransform：附加对象</p>
+<p>Keep Selected Target Valid：在最初选择一个可交互对象后，即使它不再是有效的目标，也是否继续选择它。（不勾选，抓取的物品要一直保持选中状态，否则就会掉落）</p>
+<p>Show Interactable Hover Meshes：当交互对象悬停在插座上时，是否显示网格</p>
+<p>Socket Active：是否激活插座</p>
+<p>Recycle Delay Time：设置移除对象后插座拒绝悬停的时间</p>
+<hr>
+<p><strong>XRRayInteractor:用于在远处与可交互对象进行交互的交互器。这是通过光线转换(ray cast)来处理的，它会更新这个交互器的当前有效目标集。</strong></p>
+<img src="https://img-blog.csdnimg.cn/548b0bbb6cae408993a754d79bf25fe7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_9,color_FFFFFF,t_70,g_se,x_16">
+
+<img src="https://img-blog.csdnimg.cn/20007ffa601e4943a05a3aedda8dccb8.png">
+
+<p>InteractionLayerMask：交互层级遮罩，指定可交互的层级</p>
+<p>EnableInteractionWithUIGameObject：交互器是否能影响UI</p>
+<p>ForceGrab：是否将抓取物品拉到手上</p>
+<p>AttachTransform：附加对象</p>
+<p>RayOriginTransform：射线原点，朝向也是调它</p>
+<p>LineType：射线类型：直线、抛物线、贝塞尔曲线</p>
+<p>Raycast Mask：射线可交互的层级，Unity自带的层级类，不勾选的层级，射线会穿透它</p>
+<p>HitClosestOnly：是否只交互最近碰撞的物品</p>
+<p>AudioEvent：添加触发声音片段</p>
+<p>HapticEvents：添加触发震动</p>
+<p>InteractorEvents：添加交互事件</p>
+<hr>
+<p><strong>XRDirectInteractor:交互器用于直接与接触的交互设备进行交互。这是通过更新此交互器的当前有效目标集的触发器卷来处理的。这个组件必须有一个被设置为<em>触发器</em>的碰撞卷才能工作。</strong></p>
+<img src="https://img-blog.csdnimg.cn/daa6da04c85c41f39e53e406e6b36e9e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_14,color_FFFFFF,t_70,g_se,x_16">
+
+<p>SelectActionTrigger：对控制器输入进行定义，如何确定为select</p>
+<p>KeepSelectedTargetVailid：当选择一个可交互目标后，即使他不再是有效的目标，仍然能选择他</p>
+<p>HideControllerOnSelect：选择状态下是否隐藏控制器</p>
+<p>AllowHoveredActivate：是否允许悬浮情况下激活</p>
+<hr>
+<p><strong>XR Simple Interactable:最简单的交互对象，只是有一个具体的交互实现，一般用在去对交互事件进行相应，没有实际的交互手段。</strong></p>
+<img src="https://img-blog.csdnimg.cn/a0b4245214664c7ea6e179619c447768.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_13,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Interaction Layer Mask:层掩码允许与交互层掩码与该交互层掩码中的任何层重叠的交互者进行交互。</p>
+<p>Custom Reticle：有效时出现在射线尾端的十字线。</p>
+<p>Select Mode：是否运行多个交互者和交互对象进行交互</p>
+<hr>
+<p><strong>XR Grab Interactable:允许基本“抓取”功能的可交互组件。可以连接到一个选择的交互者，并在遵守物理的同时跟随它（并在释放时继承速度）。</strong></p>
+<img src="https://img-blog.csdnimg.cn/24af29d8561c4f24afb7af2fcb604036.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_10,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Interaction Layer Mask:层掩码允许与交互层掩码与该交互层掩码中的任何层重叠的交互者进行交互。</p>
+<p>Custom Reticle：有效时出现在射线尾端的十字线。</p>
+<p>Select Mode：是否运行多个交互者和交互对象进行交互</p>
+<p>Movement Type：移动方式选择（如果想让抓取物品保持物理属性，不穿透墙和桌子，这里要选择“速度追踪”）</p>
+<p>Retain Transform Parent：交互者放下物品后是否还原至原父对象下</p>
+<p>TrackPositon：是否追踪交互者的位置</p>
+<p>Track Rotation：是否追踪交互者的朝向</p>
+<p>Throw On Detach：是否在释放时继承交互者的速度</p>
+<p>Force Gravity On Detach：是否强制对象释放时拥有重力</p>
+<p>Attach Transform：交互时依附的点（默认设置物品的中心）</p>
+<hr>
+<p><strong>LocomotionSystem:用于控制对XR Origin的访问。这个系统强制在同一时间只有一个移动供应商可以移动XR原点。这是访问XR Origin受控制的唯一地方，不推荐使用多个LocomotionSystem实例驱动单个XR Origin。</strong></p>
+<p><strong>Teleportation Anchor:锚是将用户传送到预先确定的特定位置和&#x2F;或旋转的远程传送目的地。</strong></p>
+<img src="https://img-blog.csdnimg.cn/820a6185222d44619cf333facd775c2f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_12,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Interaction Layer Mask:层掩码允许与交互层掩码与该交互层掩码中的任何层重叠的交互者进行交互。</p>
+<p>Custom Reticle：有效时出现在射线尾端的十字线。</p>
+<p>Select Mode：是否运行多个交互者和交互对象进行交互</p>
+<p>Teleport Anchor Transform：传送目的地的位点。</p>
+<p>Match Orientation：定位origin的方式选择</p>
+<p>Teleport Trigger：传送触发的时间选择</p>
+<p>Teleportation Provider：该远程传送可交互的远程传送提供者将远程传送请求传送</p>
+<hr>
+<p><strong>Teleportation Area：区域是一个传送目的地，将用户传送到表面上的指定位置</strong></p>
+<img src="https://img-blog.csdnimg.cn/788d072292b940489bab79f43f3b6359.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_12,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Interaction Layer Mask:层掩码允许与交互层掩码与该交互层掩码中的任何层重叠的交互者进行交互。</p>
+<p>Custom Reticle：有效时出现在射线尾端的十字线。</p>
+<p>Select Mode：是否运行多个交互者和交互对象进行交互</p>
+<p>Match Orientation：定位origin的方式选择</p>
+<p>Teleport Trigger：传送触发的时间选择</p>
+<p>Teleportation Provider：该远程传送可交互的远程传送提供者将远程传送请求传送</p>
+<hr>
+<p><strong>Continuous Turn Provider：连续旋转提供者</strong></p>
+<img src="https://img-blog.csdnimg.cn/147bfc0033c44c5f92c9a7c6f95ed9d5.png">
+
+<p>Turn Speed：旋转速度</p>
+<p>Input Binding：旋转轴绑定</p>
+<p>Controllers：控制器设置</p>
+<p>Deadzone Min&#x2F;Max：能否触发功能的最大值最小值</p>
+<hr>
+<p><strong>Snap Turn Provider：步进旋转提供者</strong></p>
+<img src="https://img-blog.csdnimg.cn/b21e981083104924b619c8f5ca75177d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_10,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Turn Input Source：旋转轴绑定</p>
+<p>Controllers：控制器设置</p>
+<p>Turn Amount：每次捕捉到信号旋转的值</p>
+<p>Dead Zone：触发信号的限制</p>
+<p>Activation Timeout：两次激活的时间间隔</p>
+<hr>
+<p><strong>Continuous Move Provider：连续移动提供者</strong></p>
+<img src="https://img-blog.csdnimg.cn/2f527c7bd62f43fb98491b80e7431744.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASGVucnlfTGF1NjE3,size_11,color_FFFFFF,t_70,g_se,x_16">
+
+<p>Move Speed：移动速度</p>
+<p>Forward Source：自定义向前的方向</p>
+<p>Input Binding：移动轴绑定</p>
+<p>Controllers：控制器设置</p>
+<p>Deadzone Min&#x2F;Max：能否触发功能的最大值最小值</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>XR Interaction Toolkit研究</p><p><a href="https://www.llbwy.com/2022/09/25/XRInteractionToolkit研究/">https://www.llbwy.com/2022/09/25/XRInteractionToolkit研究/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>凯</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-09-25</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-12-19</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%F0%9F%94%A5Unity%F0%9F%94%A5/">🔥Unity🔥</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/09/26/Unity%E5%90%AF%E5%8A%A8%E5%85%8D%E9%87%8D%E5%A4%8D%E5%8A%A0%E8%BD%BD%E8%B5%84%E6%BA%90/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Unity启动免重复加载资源</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/09/25/PicoVR%E5%B8%B8%E7%94%A8%E4%BA%8B%E4%BB%B6/"><span class="level-item">Pico 常用事件</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://s2.loli.net/2023/01/03/ofAqdIVLBk1iyKj.jpg" alt="凯"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">凯</p><p class="is-size-6 is-block">𝙄𝙉𝙁𝙅</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>夜の城</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">107</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">10</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/llbwy"><i class="fa-brands fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="哔哩哔哩" href="https://space.bilibili.com/116087738?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="抖音" href="https://www.douyin.com/user/MS4wLjABAAAApZsvxiDChEj7C2OXb7PtCTZr0-eBcoAJCEJwQz0WVAQh-L6F25QJBE-Uu9LKmzSI"><i class="fa-brands fa-tiktok"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#XR-Interaction-Toolkit研究"><span class="level-left"><span class="level-item">1</span><span class="level-item">XR Interaction Toolkit研究</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/C/"><span class="tag">C#</span><span class="tag">27</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CSS/"><span class="tag">CSS</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JavaScript/"><span class="tag">JavaScript</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Lua/"><span class="tag">Lua</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Vue/"><span class="tag">Vue</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%83%8F%E7%B4%A0%E7%94%BB/"><span class="tag">像素画</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%97%E6%B3%95/"><span class="tag">算法</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%F0%9F%92%A7Three%F0%9F%92%A7/"><span class="tag">💧Three💧</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%F0%9F%94%A5Unity%F0%9F%94%A5/"><span class="tag">🔥Unity🔥</span><span class="tag">44</span></a></div></div></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Web%E5%BC%80%E5%8F%91/"><span class="level-start"><span class="level-item">Web开发</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%87%E5%BF%98%E5%BD%95/"><span class="level-start"><span class="level-item">备忘录</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><span class="level-start"><span class="level-item">数据库</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"><span class="level-start"><span class="level-item">游戏开发</span></span><span class="level-end"><span class="level-item tag">49</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"><span class="level-start"><span class="level-item">生活记录</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%B6%AF/"><span class="level-start"><span class="level-item">程序生涯</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%89%BA%E6%9C%AF%E8%AE%BE%E8%AE%A1/"><span class="level-start"><span class="level-item">艺术设计</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/01/05/Unity%20%E7%81%AF%E5%85%89%E7%B3%BB%E7%BB%9F/"><img src="https://game.gtimg.cn/images/lol/act/img/skin/big266007.jpg" alt="Unity 灯光系统"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-01-05T15:17:30.000Z">2023-01-05</time></p><p class="title"><a href="/2023/01/05/Unity%20%E7%81%AF%E5%85%89%E7%B3%BB%E7%BB%9F/">Unity 灯光系统</a></p><p class="categories"><a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/01/05/Unity%20HDRP/"><img src="https://s2.loli.net/2023/01/05/XKS6aOLlpJYVh1k.png" alt="Unity HDRP"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-01-05T12:39:32.000Z">2023-01-05</time></p><p class="title"><a href="/2023/01/05/Unity%20HDRP/">Unity HDRP</a></p><p class="categories"><a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/12/31/Unity%20%E7%83%AD%E6%9B%B4%E6%96%B0%20ILRuntime/"><img src="https://game.gtimg.cn/images/lol/act/img/skin/big266007.jpg" alt="Unity 热更新 ILRuntime"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-12-30T18:42:52.000Z">2022-12-31</time></p><p class="title"><a href="/2022/12/31/Unity%20%E7%83%AD%E6%9B%B4%E6%96%B0%20ILRuntime/">Unity 热更新 ILRuntime</a></p><p class="categories"><a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/12/31/UnityMemo%201/"><img src="https://game.gtimg.cn/images/lol/act/img/skin/big266007.jpg" alt="UnityMemo 1"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-12-30T18:37:23.000Z">2022-12-31</time></p><p class="title"><a href="/2022/12/31/UnityMemo%201/">UnityMemo 1</a></p><p class="categories"><a href="/categories/%E5%A4%87%E5%BF%98%E5%BD%95/">备忘录</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/12/28/Unity%20%E7%83%AD%E6%9B%B4%E6%96%B0%20Assetbundle/"><img src="https://game.gtimg.cn/images/lol/act/img/skin/big266007.jpg" alt="Unity 热更新 Assetbundle"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-12-28T15:36:40.000Z">2022-12-28</time></p><p class="title"><a href="/2022/12/28/Unity%20%E7%83%AD%E6%9B%B4%E6%96%B0%20Assetbundle/">Unity 热更新 Assetbundle</a></p><p class="categories"><a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/01/"><span class="level-start"><span class="level-item">一月 2023</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/12/"><span class="level-start"><span class="level-item">十二月 2022</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/11/"><span class="level-start"><span class="level-item">十一月 2022</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/10/"><span class="level-start"><span class="level-item">十月 2022</span></span><span class="level-end"><span class="level-item tag">18</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/09/"><span class="level-start"><span class="level-item">九月 2022</span></span><span class="level-end"><span class="level-item tag">24</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/08/"><span class="level-start"><span class="level-item">八月 2022</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/07/"><span class="level-start"><span class="level-item">七月 2022</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/05/"><span class="level-start"><span class="level-item">五月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/07/"><span class="level-start"><span class="level-item">七月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://pic.stackoverflow.wiki/uploadImages/123/133/198/26/2022/08/06/14/24/3950b1ed-eaab-4a74-a513-9313ea99ba58.svg" alt="编号89757 =&gt; (凯)" height="28"></a><p class="is-size-7"><span>&copy; 2023 凯</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
